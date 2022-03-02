@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.js">
+    <link rel="icon" type="image/xicon" href="Pictures/crown.png">
+    <link rel="stylesheet" href="admin.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+    <h1 id="rad">Admin</h1>
+
+
+    <!-- Admin Ban Panel -->
+
+    <ul>
+    <button id="select" href=""> Get </button>
+    <input id="inputadmin" type="text" placeholder="Enter Discord Name">
+    <input id="dctag" type="text" placeholder="Enter Tag">
+    </ul>
+
+
+    <div class="main">
+    <p id="result"></p>
+    </div>
+
+    <!-- Saved IP's-->
+
+    <script>
+
+var text = [
+  "165.63.161.61",    
+  "124.101.138.144",
+  "117.198.114.248",
+  "38.155.33.133",
+  "174.119.23.231",
+  "168.19.211.62",
+  "72.97.225.9",
+  "11.118.1.99",
+  "210.193.81.154",
+  "103.247.55.116",
+  "227.241.151.83",
+  "205.212.194.127",
+  "138.217.78.184",
+  "95.231.133.163",
+  "175.177.5.11",
+  "165.63.421.61",    
+  "124.101.138.144",
+  "127.910.114.548",
+  "18.655.32.613",
+  "181.309.43.344",
+  "121.81.991.71",
+  "45.432.565.9",
+  "22.593.5.94",
+  "460.483.11.554",
+  "137.627.13.436",
+  "243.241.957.33",
+  "283.737.275.741",
+  "258.947.48.748",
+  "71.361.727.482",
+  "139.154.4.21"
+];
+
+document.getElementById("select").onclick = function() {
+  document.getElementById("result").innerHTML = text[Math.floor(Math.random() * text.length)];
+}
+
+    </script>
+
+
+</body>
+</html>
+
